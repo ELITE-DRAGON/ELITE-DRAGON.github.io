@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Has Been Hacked</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://image.jimcdn.com/app/cms/image/transf/dimension=1280x10000:format=jpg/path/s2218c5e7a99d4e8f/image/i58a7bb1f73f88b65/version/1602298024/image.jpg">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000;
+            animation: glow 1.5s infinite;
+            font-family: "Nosifer", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                text-shadow: 0 0 5px #3d066c, 0 0 10px #8e168c, 0 0 15px #15c9ae, 0 0 20px #fb04ff, 0 0 25px #ff0000, 0 0 30px #6a16fc, 0 0 35px #ff0000;
+            }
+            50% {
+                text-shadow: 0 0 10px #b0ab19, 0 0 20px #a84545, 0 0 30px #225c75, 0 0 40px #ff0000, 0 0 50px #12ae91, 0 0 60px #ff0000, 0 0 70px #ff0000;
+            }
+        }
+
+        .hacker-img {
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(25, 14, 228, 0.6);
+            transition: transform 0.5s;
+        }
+
+        .hacker-img:hover {
+            transform: scale(1.1);
+        }
+
+        .matrix-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://wallpapercave.com/wp/wp1893013.png') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 2px #000;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button ></button>
+    <div class="matrix-bg"></div>
+    <div class="container">
+        <h1>Your Website Has Been Hacked</h1>
+        <img class="hacker-img" src="data:image/jpeg;base64,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" alt="Hacker Image">
+        <p>We're watching you...</p>
+    </div>
+    <h1>ELITE DRAGON</h1>
+</body>
+
+</html>
